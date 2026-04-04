@@ -1,0 +1,38 @@
+# Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+*.sqlite3
+
+# Media - user uploads and generated files (sensitive patient data)
+media/uploads/
+media/processed/
+media/reports/
+media/detections/
+
+# Model weights (too large for GitHub - use Git LFS or store separately)
+api/models/best.pt
+
+# Environment
+.env
+.venv
+venv/
+env/
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Static collected
+staticfiles/
+static_root/
