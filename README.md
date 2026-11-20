@@ -125,8 +125,8 @@ The YOLOv8 model (`best.pt`) is not included in this repository due to file size
 - **Architecture:** YOLOv8m, trained through three iterations
 - **Dataset:** ~10,000 labeled dental images (sourced from Kaggle)
 - **Classes:** 4 (Caries, Gingivitis, Tartar, Mouth Ulcer)
-- **Preprocessing:** Removed and relabeled a 5th class (discoloration) to improve precision
 - **Result:** 87.7% mAP50 across 4 classes
+- **How it improved:** After adding the 4th class, mAP50 dropped to 82%. I collected new images, used the model to label them (pseudo-labeling), and added them to the training data, raising mAP50 to 87.7%
 
 ---
 
