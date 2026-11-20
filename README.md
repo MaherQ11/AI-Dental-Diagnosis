@@ -4,6 +4,8 @@ A full-stack web application that uses **YOLOv8 object detection** to diagnose d
 
 Built as a graduation project at Umm Al-Qura University.
 
+**Status:** Completed — model trained, Django app runs locally.
+
 ---
 
 ## Demo
@@ -39,7 +41,7 @@ Built as a graduation project at Umm Al-Qura University.
 ### AI Engine
 - YOLOv8 trained on ~10,000 dental images
 - Multi-label detection (detects multiple conditions in a single scan)
-- **99.3% accuracy** on unseen test data
+- **87.7% mAP50** across all 4 classes
 - Auto-generates annotated images and structured JSON detection logs
 - PDF report generation via ReportLab
 
@@ -120,11 +122,11 @@ Then open: [http://localhost:8000](http://localhost:8000)
 
 The YOLOv8 model (`best.pt`) is not included in this repository due to file size.
 
-- **Architecture:** YOLOv8
+- **Architecture:** YOLOv8m, trained through three iterations
 - **Dataset:** ~10,000 labeled dental images (sourced from Kaggle)
 - **Classes:** 4 (Caries, Gingivitis, Tartar, Mouth Ulcer)
 - **Preprocessing:** Removed and relabeled a 5th class (discoloration) to improve precision
-- **Accuracy:** 99.3% on held-out test set
+- **Result:** 87.7% mAP50 across 4 classes
 
 ---
 
