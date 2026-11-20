@@ -76,9 +76,7 @@ aididentify_backend/
 │   │   └── pdf_generator.py # ReportLab PDF report builder
 │   ├── models/
 │   │   └── best.pt          # ← Place your trained model here (not included in repo)
-│   └── templates/
-│       ├── Patient/         # Patient-side HTML templates
-│       └── Doctor/          # Doctor-side HTML templates
+│   └── templates/           # Patient/ and Doctor/ HTML pages (not included in this repo)
 ├── media/                   # Generated at runtime (gitignored)
 │   ├── uploads/             # Patient uploaded images
 │   ├── processed/           # YOLO-annotated images
